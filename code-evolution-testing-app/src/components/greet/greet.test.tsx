@@ -7,7 +7,7 @@ test("Greet renders correctly",()=>{
     render(<Greet/>);
     const textElement = screen.getByText(/hello/i);
     expect(textElement).toBeInTheDocument();
-})
+});
 
 
 //TDD Approach...first write test case before writing software development code.
