@@ -16,3 +16,11 @@ test("Greet renders with name",()=>{
     const textElement = screen.getByText("Hello Vishwas");
     expect(textElement).toBeInTheDocument();
 })
+
+
+test("Greet Names correctly",()=>{
+    //to create virtual Dom.
+    render(<Greet/>);
+    const textElement = screen.getByText(/bhushan/i);
+    expect(textElement).toBeInTheDocument();
+});
